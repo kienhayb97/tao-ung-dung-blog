@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div th:each="customer,iterStat : ${customers}" th:class="${iterStat.odd}? 'odd'">
+    <div class="customer-item">
+        <p th:text="${customer.id}"></p>
+        <p th:text="${customer.firstName}"></p>
+        <p th:text="${customer.lastName}"></p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+.content {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    background-color: cadetblue;
+    font-size: 60px;
+    padding: 100px;
+}
